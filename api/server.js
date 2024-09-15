@@ -27,6 +27,17 @@ app.get('/api/recipes', async (req, res) => {
     }
 });
 
+app.get('/api/recipes/meal-type/:mealType', async (req, res) => {
+    const { mealType } = req.params;
+    try {
+        const result = await pool.query('SELECT * FROM recipes WHERE meal_type = $1', [mealType]);
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Server error');
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
