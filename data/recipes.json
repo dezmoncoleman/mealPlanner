@@ -1,0 +1,504 @@
+[
+    {
+        "id": 1,
+        "title": "Quick Veggie Stir Fry",
+        "image": "https://example.com/quick-veggie-stir-fry.jpg",
+        "readyInMinutes": 20,
+        "ingredients": ["mixed vegetables", "soy sauce", "ginger", "garlic", "rice"],
+        "mealType": "dinner",
+        "description": "A quick and healthy stir fry with fresh vegetables and soy sauce.",
+        "directions": "1. Heat oil in a pan. 2. Add garlic and ginger, sauté for 1 minute. 3. Add vegetables and stir-fry for 5-7 minutes. 4. Add soy sauce and serve over rice."
+    },
+    {
+        "id": 2,
+        "title": "Spaghetti Aglio e Olio",
+        "image": "https://example.com/spaghetti-aglio-e-olio.jpg",
+        "readyInMinutes": 15,
+        "ingredients": ["spaghetti", "olive oil", "garlic", "chili flakes", "parsley"],
+        "mealType": "lunch",
+        "description": "A simple Italian pasta dish made with garlic and olive oil.",
+        "directions": "1. Cook spaghetti according to package instructions. 2. In a pan, heat olive oil and sauté garlic until golden. 3. Add chili flakes and cooked spaghetti. 4. Toss with parsley and serve."
+    },
+    {
+        "id": 3,
+        "title": "Caprese Salad",
+        "image": "https://example.com/caprese-salad.jpg",
+        "readyInMinutes": 10,
+        "ingredients": ["mozzarella", "tomatoes", "basil", "olive oil", "balsamic vinegar"],
+        "mealType": "lunch",
+        "description": "A fresh salad with mozzarella, tomatoes, and basil drizzled with olive oil.",
+        "directions": "1. Slice mozzarella and tomatoes. 2. Layer them with basil leaves. 3. Drizzle with olive oil and balsamic vinegar before serving."
+    },
+    {
+        "id": 4,
+        "title": "Chicken Stir Fry",
+        "image": "https://example.com/chicken-stir-fry.jpg",
+        "readyInMinutes": 20,
+        "ingredients": ["chicken breast", "mixed vegetables", "soy sauce", "ginger", "garlic", "rice"],
+        "mealType": "dinner",
+        "description": "A simple and healthy chicken stir fry with fresh vegetables and soy sauce.",
+        "directions": "1. Cook chicken in a pan until golden brown. 2. Add garlic, ginger, and vegetables, stir-fry for 5-7 minutes. 3. Add soy sauce and serve over rice."
+    },
+    {
+        "id": 5,
+        "title": "Greek Salad",
+        "image": "https://example.com/greek-salad.jpg",
+        "readyInMinutes": 10,
+        "ingredients": ["cucumber", "tomatoes", "feta", "olives", "red onion"],
+        "mealType": "lunch",
+        "description": "A classic Greek salad with cucumbers, tomatoes, and feta cheese.",
+        "directions": "1. Chop cucumber, tomatoes, and red onion. 2. Mix with olives and crumbled feta. 3. Drizzle with olive oil and serve."
+    },
+    {
+        "id": 6,
+        "title": "Avocado Toast",
+        "image": "https://example.com/avocado-toast.jpg",
+        "readyInMinutes": 5,
+        "ingredients": ["avocado", "bread", "lemon", "salt", "pepper"],
+        "mealType": "breakfast",
+        "description": "A simple and healthy avocado toast with a squeeze of lemon.",
+        "directions": "1. Toast bread. 2. Mash avocado and spread on toast. 3. Squeeze lemon juice and sprinkle salt and pepper."
+    },
+    {
+        "id": 7,
+        "title": "Egg Salad Sandwich",
+        "image": "https://example.com/egg-salad-sandwich.jpg",
+        "readyInMinutes": 10,
+        "ingredients": ["eggs", "mayonnaise", "lettuce", "bread"],
+        "mealType": "lunch",
+        "description": "A creamy egg salad sandwich with lettuce.",
+        "directions": "1. Boil and chop eggs. 2. Mix with mayonnaise and serve on bread with lettuce."
+    },
+    {
+        "id": 8,
+        "title": "Fruit Salad",
+        "image": "https://example.com/fruit-salad.jpg",
+        "readyInMinutes": 10,
+        "ingredients": ["strawberries", "blueberries", "bananas", "oranges"],
+        "mealType": "snack",
+        "description": "A refreshing mix of fresh fruits.",
+        "directions": "1. Chop fruit and mix together in a bowl. 2. Serve chilled."
+    },
+    {
+        "id": 9,
+        "title": "Steak Salad",
+        "image": "https://example.com/steak-salad.jpg",
+        "readyInMinutes": 25,
+        "ingredients": ["steak", "mixed greens", "tomatoes", "olive oil", "balsamic vinegar"],
+        "mealType": "dinner",
+        "description": "A hearty steak salad with fresh greens and balsamic dressing.",
+        "directions": "1. Grill steak to desired doneness. 2. Slice and serve over mixed greens with tomatoes, olive oil, and balsamic vinegar."
+    },
+    {
+        "id": 10,
+        "title": "Lentil Soup",
+        "image": "https://example.com/lentil-soup.jpg",
+        "readyInMinutes": 30,
+        "ingredients": ["lentils", "carrots", "celery", "onions", "vegetable broth"],
+        "mealType": "dinner",
+        "description": "A filling and nutritious lentil soup.",
+        "directions": "1. Sauté onions, carrots, and celery. 2. Add lentils and broth, simmer for 25 minutes. 3. Serve hot."
+    },
+    {
+        "id": 11,
+        "title": "Tuna Salad Sandwich",
+        "image": "https://example.com/tuna-salad-sandwich.jpg",
+        "readyInMinutes": 10,
+        "ingredients": ["canned tuna", "mayonnaise", "lettuce", "bread", "onion"],
+        "mealType": "lunch",
+        "description": "A quick and easy tuna salad sandwich.",
+        "directions": "1. Mix canned tuna with mayonnaise and chopped onion. 2. Spread on bread and add lettuce. 3. Serve immediately."
+    },
+    {
+        "id": 12,
+        "title": "Chicken Caesar Wrap",
+        "image": "https://example.com/chicken-caesar-wrap.jpg",
+        "readyInMinutes": 15,
+        "ingredients": ["chicken breast", "caesar dressing", "romaine lettuce", "parmesan", "tortilla"],
+        "mealType": "lunch",
+        "description": "A delicious chicken Caesar wrap with romaine and parmesan.",
+        "directions": "1. Grill or cook chicken breast and slice. 2. Layer with lettuce, Caesar dressing, and parmesan in a tortilla. 3. Wrap and serve."
+    },
+    {
+        "id": 13,
+        "title": "Eggplant Parmesan",
+        "image": "https://example.com/eggplant-parmesan.jpg",
+        "readyInMinutes": 30,
+        "ingredients": ["eggplant", "tomato sauce", "mozzarella", "parmesan", "basil"],
+        "mealType": "dinner",
+        "description": "A quick version of eggplant parmesan baked with cheese and tomato sauce.",
+        "directions": "1. Slice and bake eggplant until tender. 2. Layer with tomato sauce and cheese, bake until bubbly. 3. Garnish with fresh basil."
+    },
+    {
+        "id": 14,
+        "title": "Avocado and Tomato Salad",
+        "image": "https://example.com/avocado-tomato-salad.jpg",
+        "readyInMinutes": 10,
+        "ingredients": ["avocado", "tomatoes", "red onion", "cilantro", "lemon juice"],
+        "mealType": "lunch",
+        "description": "A fresh avocado and tomato salad with lemon and cilantro.",
+        "directions": "1. Dice avocado, tomatoes, and red onion. 2. Mix with cilantro and lemon juice. 3. Serve chilled."
+    },
+    {
+        "id": 15,
+        "title": "Shrimp Tacos",
+        "image": "https://example.com/shrimp-tacos.jpg",
+        "readyInMinutes": 20,
+        "ingredients": ["shrimp", "taco shells", "cabbage", "sour cream", "lime"],
+        "mealType": "dinner",
+        "description": "Zesty shrimp tacos with cabbage and sour cream.",
+        "directions": "1. Cook shrimp in a pan until pink. 2. Assemble tacos with shrimp, cabbage, and sour cream. 3. Squeeze lime juice and serve."
+    },
+    {
+        "id": 16,
+        "title": "Spinach and Feta Omelette",
+        "image": "https://example.com/spinach-feta-omelette.jpg",
+        "readyInMinutes": 10,
+        "ingredients": ["eggs", "spinach", "feta", "olive oil", "salt"],
+        "mealType": "breakfast",
+        "description": "A light and healthy spinach and feta omelette.",
+        "directions": "1. Sauté spinach in olive oil. 2. Pour beaten eggs into the pan and sprinkle with feta. 3. Cook until set and serve."
+    },
+    {
+        "id": 17,
+        "title": "Beef Burrito Bowl",
+        "image": "https://example.com/beef-burrito-bowl.jpg",
+        "readyInMinutes": 25,
+        "ingredients": ["ground beef", "rice", "black beans", "salsa", "cheese"],
+        "mealType": "lunch",
+        "description": "A flavorful burrito bowl with beef, rice, beans, and salsa.",
+        "directions": "1. Cook ground beef in a pan until browned. 2. Serve over rice with black beans, salsa, and cheese."
+    },
+    {
+        "id": 18,
+        "title": "Mushroom Risotto",
+        "image": "https://example.com/mushroom-risotto.jpg",
+        "readyInMinutes": 40,
+        "ingredients": ["arborio rice", "mushrooms", "chicken broth", "parmesan", "onion"],
+        "mealType": "dinner",
+        "description": "A creamy mushroom risotto with parmesan and onions.",
+        "directions": "1. Sauté onions and mushrooms. 2. Add rice and broth, stir frequently until rice is cooked. 3. Stir in parmesan and serve."
+    },
+    {
+        "id": 19,
+        "title": "Chicken Fajitas",
+        "image": "https://example.com/chicken-fajitas.jpg",
+        "readyInMinutes": 30,
+        "ingredients": ["chicken breast", "bell peppers", "onions", "fajita seasoning", "tortillas"],
+        "mealType": "dinner",
+        "description": "A sizzling chicken fajita dish with peppers and onions.",
+        "directions": "1. Sauté chicken, bell peppers, and onions with fajita seasoning. 2. Serve in warm tortillas."
+    },
+    {
+        "id": 20,
+        "title": "Tomato Basil Soup",
+        "image": "https://example.com/tomato-basil-soup.jpg",
+        "readyInMinutes": 25,
+        "ingredients": ["tomatoes", "basil", "onions", "garlic", "cream"],
+        "mealType": "dinner",
+        "description": "A creamy tomato basil soup perfect for a chilly evening.",
+        "directions": "1. Sauté onions and garlic. 2. Add tomatoes and basil, simmer for 15 minutes. 3. Blend until smooth, add cream, and serve."
+    },
+    {
+
+            "id": 21,
+            "title": "Grilled Cheese Sandwich",
+            "image": "https://example.com/grilled-cheese-sandwich.jpg",
+            "readyInMinutes": 10,
+            "ingredients": ["bread", "cheddar cheese", "butter"],
+            "mealType": "lunch",
+            "description": "A classic grilled cheese sandwich with melted cheddar.",
+            "directions": "1. Butter the bread and place cheese between two slices. 2. Grill on both sides until golden brown and cheese is melted."
+        },
+        {
+            "id": 22,
+            "title": "Baked Salmon",
+            "image": "https://example.com/baked-salmon.jpg",
+            "readyInMinutes": 20,
+            "ingredients": ["salmon", "lemon", "garlic", "olive oil", "dill"],
+            "mealType": "dinner",
+            "description": "A simple and healthy baked salmon with lemon and dill.",
+            "directions": "1. Preheat oven to 400°F. 2. Place salmon on a baking sheet, drizzle with olive oil, garlic, and lemon. 3. Bake for 15 minutes and garnish with dill."
+        },
+        {
+            "id": 23,
+            "title": "Chicken Quesadilla",
+            "image": "https://example.com/chicken-quesadilla.jpg",
+            "readyInMinutes": 15,
+            "ingredients": ["chicken breast", "tortilla", "cheese", "salsa", "sour cream"],
+            "mealType": "lunch",
+            "description": "A cheesy chicken quesadilla served with salsa and sour cream.",
+            "directions": "1. Cook and shred chicken. 2. Place chicken and cheese between tortillas, cook in a pan until crispy. 3. Serve with salsa and sour cream."
+        },
+        {
+            "id": 24,
+            "title": "Veggie Burrito",
+            "image": "https://example.com/veggie-burrito.jpg",
+            "readyInMinutes": 20,
+            "ingredients": ["black beans", "rice", "bell peppers", "avocado", "tortilla"],
+            "mealType": "dinner",
+            "description": "A healthy veggie burrito with black beans, rice, and avocado.",
+            "directions": "1. Cook bell peppers in a pan. 2. Assemble burrito with rice, beans, avocado, and bell peppers. 3. Roll up and serve."
+        },
+        {
+            "id": 25,
+            "title": "Chickpea Salad",
+            "image": "https://example.com/chickpea-salad.jpg",
+            "readyInMinutes": 10,
+            "ingredients": ["chickpeas", "cucumber", "tomatoes", "feta", "lemon"],
+            "mealType": "lunch",
+            "description": "A refreshing chickpea salad with cucumber, tomatoes, and feta.",
+            "directions": "1. Mix chickpeas with diced cucumber, tomatoes, and feta. 2. Drizzle with lemon juice and serve."
+        },
+        {
+            "id": 26,
+            "title": "Turkey Sandwich",
+            "image": "https://example.com/turkey-sandwich.jpg",
+            "readyInMinutes": 10,
+            "ingredients": ["turkey breast", "lettuce", "tomato", "bread", "mayonnaise"],
+            "mealType": "lunch",
+            "description": "A simple turkey sandwich with lettuce and tomato.",
+            "directions": "1. Layer turkey, lettuce, and tomato between slices of bread. 2. Spread mayonnaise and serve."
+        },
+        {
+            "id": 27,
+            "title": "Pumpkin Soup",
+            "image": "https://example.com/pumpkin-soup.jpg",
+            "readyInMinutes": 30,
+            "ingredients": ["pumpkin", "onion", "garlic", "vegetable broth", "cream"],
+            "mealType": "dinner",
+            "description": "A creamy pumpkin soup with garlic and onions.",
+            "directions": "1. Sauté onions and garlic. 2. Add pumpkin and broth, simmer for 20 minutes. 3. Blend until smooth, add cream, and serve."
+        },
+        {
+            "id": 28,
+            "title": "Beef Tacos",
+            "image": "https://example.com/beef-tacos.jpg",
+            "readyInMinutes": 20,
+            "ingredients": ["ground beef", "taco shells", "lettuce", "cheese", "salsa"],
+            "mealType": "dinner",
+            "description": "Crunchy beef tacos with lettuce, cheese, and salsa.",
+            "directions": "1. Cook ground beef in a pan with taco seasoning. 2. Assemble tacos with beef, lettuce, cheese, and salsa."
+        },
+        {
+            "id": 29,
+            "title": "Cucumber Salad",
+            "image": "https://example.com/cucumber-salad.jpg",
+            "readyInMinutes": 10,
+            "ingredients": ["cucumber", "red onion", "vinegar", "olive oil", "dill"],
+            "mealType": "snack",
+            "description": "A refreshing cucumber salad with vinegar and dill.",
+            "directions": "1. Slice cucumbers and onions. 2. Toss with vinegar, olive oil, and dill. 3. Serve chilled."
+        },
+        {
+            "id": 30,
+            "title": "Vegetable Soup",
+            "image": "https://example.com/vegetable-soup.jpg",
+            "readyInMinutes": 30,
+            "ingredients": ["carrots", "celery", "potatoes", "tomatoes", "vegetable broth"],
+            "mealType": "dinner",
+            "description": "A hearty vegetable soup with a variety of fresh vegetables.",
+            "directions": "1. Sauté carrots, celery, and potatoes. 2. Add vegetable broth and tomatoes, simmer for 20 minutes."
+        },
+        {
+            "id": 31,
+            "title": "Chicken Salad",
+            "image": "https://example.com/chicken-salad.jpg",
+            "readyInMinutes": 15,
+            "ingredients": ["chicken breast", "mayonnaise", "celery", "grapes", "lettuce"],
+            "mealType": "lunch",
+            "description": "A creamy chicken salad with celery and grapes.",
+            "directions": "1. Mix shredded chicken with mayonnaise, chopped celery, and grapes. 2. Serve over lettuce or in a sandwich."
+        },
+        {
+            "id": 32,
+            "title": "Banana Pancakes",
+            "image": "https://example.com/banana-pancakes.jpg",
+            "readyInMinutes": 20,
+            "ingredients": ["bananas", "eggs", "flour", "milk", "baking powder"],
+            "mealType": "breakfast",
+            "description": "Fluffy banana pancakes perfect for breakfast.",
+            "directions": "1. Mash bananas and mix with eggs, flour, milk, and baking powder. 2. Cook on a griddle until golden brown."
+        },
+        {
+            "id": 33,
+            "title": "Tomato Avocado Toast",
+            "image": "https://example.com/tomato-avocado-toast.jpg",
+            "readyInMinutes": 5,
+            "ingredients": ["avocado", "tomato", "bread", "lemon", "salt"],
+            "mealType": "breakfast",
+            "description": "A quick avocado toast with sliced tomatoes and a dash of lemon.",
+            "directions": "1. Toast bread and spread mashed avocado. 2. Top with tomato slices, a squeeze of lemon, and a pinch of salt."
+        },
+        {
+            "id": 34,
+            "title": "Zucchini Noodles",
+            "image": "https://example.com/zucchini-noodles.jpg",
+            "readyInMinutes": 15,
+            "ingredients": ["zucchini", "olive oil", "garlic", "parmesan", "cherry tomatoes"],
+            "mealType": "dinner",
+            "description": "A light zucchini noodle dish with garlic and parmesan.",
+            "directions": "1. Spiralize zucchini into noodles. 2. Sauté with garlic in olive oil and top with cherry tomatoes and parmesan."
+        },
+        {
+            "id": 35,
+            "title": "Chicken Noodle Soup",
+            "image": "https://example.com/chicken-noodle-soup.jpg",
+            "readyInMinutes": 30,
+            "ingredients": ["chicken", "noodles", "carrots", "celery", "chicken broth"],
+            "mealType": "dinner",
+            "description": "A comforting chicken noodle soup with carrots and celery.",
+            "directions": "1. Sauté carrots and celery. 2. Add chicken, broth, and noodles, simmer until noodles are cooked."
+        },
+        {
+            "id": 36,
+            "title": "Cauliflower Rice",
+            "image": "https://example.com/cauliflower-rice.jpg",
+            "readyInMinutes": 15,
+            "ingredients": ["cauliflower", "olive oil", "garlic", "salt", "pepper"],
+            "mealType": "dinner",
+            "description": "A healthy cauliflower rice dish with garlic and olive oil.",
+            "directions": "1. Grate cauliflower into rice-sized pieces. 2. Sauté with garlic in olive oil until tender."
+        },
+        {
+            "id": 37,
+            "title": "Egg Fried Rice",
+            "image": "https://example.com/egg-fried-rice.jpg",
+            "readyInMinutes": 15,
+            "ingredients": ["rice", "eggs", "soy sauce", "green onions", "carrots"],
+            "mealType": "lunch",
+            "description": "A quick and easy egg fried rice with carrots and green onions.",
+            "directions": "1. Sauté carrots and green onions. 2. Add rice and soy sauce, then stir in scrambled eggs."
+        },
+        {
+            "id": 38,
+            "title": "Lentil Soup",
+            "image": "https://example.com/lentil-soup.jpg",
+            "readyInMinutes": 30,
+            "ingredients": ["lentils", "carrots", "celery", "onion", "vegetable broth"],
+            "mealType": "dinner",
+            "description": "A hearty lentil soup with vegetables and herbs.",
+            "directions": "1. Sauté onions, carrots, and celery. 2. Add lentils and broth, simmer for 25 minutes."
+        },
+        {
+            "id": 39,
+            "title": "Stuffed Peppers",
+            "image": "https://example.com/stuffed-peppers.jpg",
+            "readyInMinutes": 35,
+            "ingredients": ["bell peppers", "ground beef", "rice", "tomato sauce", "cheese"],
+            "mealType": "dinner",
+            "description": "Bell peppers stuffed with ground beef, rice, and cheese.",
+            "directions": "1. Cook ground beef and rice, mix with tomato sauce. 2. Stuff bell peppers and bake with cheese until tender."
+        },
+        {
+            "id": 40,
+            "title": "Shrimp Scampi",
+            "image": "https://example.com/shrimp-scampi.jpg",
+            "readyInMinutes": 20,
+            "ingredients": ["shrimp", "butter", "garlic", "lemon", "pasta"],
+            "mealType": "dinner",
+            "description": "A classic shrimp scampi served over pasta with garlic and butter.",
+            "directions": "1. Sauté garlic in butter, add shrimp and cook until pink. 2. Toss with cooked pasta and lemon juice."
+        },
+        {
+            "id": 41,
+            "title": "Greek Salad",
+            "image": "https://example.com/greek-salad.jpg",
+            "readyInMinutes": 10,
+            "ingredients": ["cucumber", "tomato", "feta", "olives", "red onion"],
+            "mealType": "lunch",
+            "description": "A fresh Greek salad with feta, olives, and cucumbers.",
+            "directions": "1. Chop cucumber, tomatoes, and red onion. 2. Toss with feta, olives, and olive oil."
+        },
+        {
+            "id": 42,
+            "title": "Pesto Pasta",
+            "image": "https://example.com/pesto-pasta.jpg",
+            "readyInMinutes": 15,
+            "ingredients": ["pasta", "pesto", "parmesan", "pine nuts", "basil"],
+            "mealType": "dinner",
+            "description": "A simple pesto pasta topped with parmesan and pine nuts.",
+            "directions": "1. Cook pasta according to package instructions. 2. Toss with pesto and top with parmesan and pine nuts."
+        },
+        {
+            "id": 43,
+            "title": "French Toast",
+            "image": "https://example.com/french-toast.jpg",
+            "readyInMinutes": 15,
+            "ingredients": ["bread", "eggs", "milk", "cinnamon", "maple syrup"],
+            "mealType": "breakfast",
+            "description": "A classic French toast with cinnamon and maple syrup.",
+            "directions": "1. Whisk eggs, milk, and cinnamon. 2. Dip bread in the mixture and cook on a griddle until golden brown."
+        },
+        {
+            "id": 44,
+            "title": "BBQ Chicken Pizza",
+            "image": "https://example.com/bbq-chicken-pizza.jpg",
+            "readyInMinutes": 25,
+            "ingredients": ["pizza dough", "bbq sauce", "chicken", "cheese", "red onion"],
+            "mealType": "dinner",
+            "description": "A homemade BBQ chicken pizza with red onions and cheese.",
+            "directions": "1. Spread BBQ sauce on pizza dough. 2. Add cooked chicken, cheese, and red onions. 3. Bake until crust is golden and cheese is melted."
+        },
+        {
+            "id": 45,
+            "title": "Chocolate Chip Pancakes",
+            "image": "https://example.com/chocolate-chip-pancakes.jpg",
+            "readyInMinutes": 20,
+            "ingredients": ["pancake mix", "chocolate chips", "milk", "eggs", "butter"],
+            "mealType": "breakfast",
+            "description": "Fluffy pancakes loaded with chocolate chips.",
+            "directions": "1. Prepare pancake mix with eggs and milk. 2. Stir in chocolate chips and cook on a griddle."
+        },
+        {
+            "id": 46,
+            "title": "Lemon Garlic Chicken",
+            "image": "https://example.com/lemon-garlic-chicken.jpg",
+            "readyInMinutes": 30,
+            "ingredients": ["chicken breast", "lemon", "garlic", "olive oil", "thyme"],
+            "mealType": "dinner",
+            "description": "A tangy lemon garlic chicken breast with thyme.",
+            "directions": "1. Marinate chicken in lemon, garlic, and thyme. 2. Sear in a pan and finish in the oven."
+        },
+        {
+            "id": 47,
+            "title": "Spinach Smoothie",
+            "image": "https://example.com/spinach-smoothie.jpg",
+            "readyInMinutes": 5,
+            "ingredients": ["spinach", "banana", "almond milk", "chia seeds", "honey"],
+            "mealType": "breakfast",
+            "description": "A healthy spinach smoothie with banana and chia seeds.",
+            "directions": "1. Blend spinach, banana, almond milk, and chia seeds until smooth. 2. Sweeten with honey if desired."
+        },
+        {
+            "id": 48,
+            "title": "Chicken Stir Fry",
+            "image": "https://example.com/chicken-stir-fry.jpg",
+            "readyInMinutes": 20,
+            "ingredients": ["chicken breast", "broccoli", "soy sauce", "ginger", "garlic"],
+            "mealType": "dinner",
+            "description": "A quick chicken stir fry with broccoli and soy sauce.",
+            "directions": "1. Sauté chicken with garlic and ginger. 2. Add broccoli and soy sauce, cook until tender."
+        },
+        {
+            "id": 49,
+            "title": "Chocolate Mug Cake",
+            "image": "https://example.com/chocolate-mug-cake.jpg",
+            "readyInMinutes": 5,
+            "ingredients": ["flour", "cocoa powder", "sugar", "milk", "baking powder"],
+            "mealType": "dessert",
+            "description": "A quick and easy chocolate mug cake made in the microwave.",
+            "directions": "1. Mix ingredients in a mug. 2. Microwave for 1-2 minutes until set."
+        },
+        {
+            "id": 50,
+            "title": "Avocado Salad",
+            "image": "https://example.com/avocado-salad.jpg",
+            "readyInMinutes": 10,
+            "ingredients": ["avocado", "tomato", "red onion", "lime", "cilantro"],
+            "mealType": "lunch",
+            "description": "A refreshing avocado salad with lime and cilantro.",
+            "directions": "1. Dice avocado, tomato, and red onion. 2. Toss with lime juice and cilantro."
+        }
+    
+]
