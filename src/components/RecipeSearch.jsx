@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-const RecipeSearch = () => {
-    const [mealType, setMealType] = useState(''); // State for selected meal type
-    const [recipes, setRecipes] = useState([]); // State for recipes
+const RecipeSearch = ({ onSave }) => {
+    const [mealType, setMealType] = useState('');
+    const [recipes, setRecipes] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [selectedRecipe, setSelectedRecipe] = useState(null); // State for the selected recipe
+    const [selectedRecipe, setSelectedRecipe] = useState(null);
 
-    // Function to fetch recipes based on selected meal type
     const fetchRecipes = async (type) => {
         setLoading(true);
         try {
@@ -20,25 +20,29 @@ const RecipeSearch = () => {
         }
     };
 
-    // Handle meal type change
     const handleMealTypeChange = (e) => {
         const selectedType = e.target.value;
         setMealType(selectedType);
         if (selectedType) {
-            fetchRecipes(selectedType); // Fetch recipes when a meal type is selected
+            fetchRecipes(selectedType);
         } else {
-            setRecipes([]); // Clear recipes if no meal type is selected
+            setRecipes([]);
         }
     };
 
-    // Handle recipe click to show details
     const handleRecipeClick = (recipe) => {
         setSelectedRecipe(recipe);
     };
 
-    // Close the modal
     const closeModal = () => {
         setSelectedRecipe(null);
+    };
+
+    const handleSave = () => {
+        if (selectedRecipe) {
+            onSave(selectedRecipe); // Call the onSave function passed from App
+            closeModal(); // Close the modal after saving
+        }
     };
 
     return (
@@ -63,21 +67,25 @@ const RecipeSearch = () => {
                 ))}
             </div>
 
-            {/* Modal for displaying recipe details */}
             {selectedRecipe && (
                 <div className='modal'>
                     <div className='modal-content'>
                         <span className='close' onClick={closeModal}>&times;</span>
                         <h2>{selectedRecipe.title}</h2>
-                        <p> {selectedRecipe.description}</p>
                         <p><strong>Ready in:</strong> {selectedRecipe.ready_in_minutes} minutes</p>
-                        <p><strong>Ingredients:</strong> {selectedRecipe.ingredients.join(', ')}</p> {/* Join ingredients with a comma */}
-                        <p><strong>Directions:</strong> {selectedRecipe.directions}</p>
+                        <p><strong>Description:</strong> {selectedRecipe.description}</p>
+                        <p><strong>Ingredients:</strong> {selectedRecipe.ingredients.join(', ')}</p>
+                        <p><strong>Directions:</strong> {selectedRecipe.direction}</p>
+                        <button onClick={handleSave}>Save to Favorites</button>
                     </div>
                 </div>
             )}
         </div>
     );
+};
+
+RecipeSearch.propTypes = {
+    onSave: PropTypes.func.isRequired,
 };
 
 export default RecipeSearch;
