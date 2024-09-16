@@ -53,9 +53,6 @@ const MealPlanner = ({ favorites, onDelete }) => { // Accept favorites and onDel
                 {activeTab && groupedFavorites[activeTab] && groupedFavorites[activeTab].length > 0 ? (
                     groupedFavorites[activeTab].map((recipe) => (
                         <div key={`${recipe.id}-${recipe.mealType}`} className="card card-compact bg-base-200 shadow-xl">
-                            <figure>
-                                <img src={recipe.image || "https://via.placeholder.com/400x200?text=No+Image"} alt={recipe.title} className="w-full h-48 object-cover" />
-                            </figure>
                             <div className="card-body">
                                 <h2 className="card-title text-lg">{recipe.title}</h2>
                                 <p className="text-sm">Ready in {recipe.ready_in_minutes} minutes</p>
