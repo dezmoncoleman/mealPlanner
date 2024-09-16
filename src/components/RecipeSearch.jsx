@@ -52,18 +52,20 @@ const RecipeSearch = ({ onSave, favorites = [] }) => { // Default to an empty ar
     };
 
     // Handle saving the recipe to favorites
-    const handleSave = (recipe) => {
-        const isAlreadyFavorite = favorites.some(fav => fav.id === recipe.id);
-        if (isAlreadyFavorite) {
-            setMessage("Recipe is already in favorites"); // Set the message
-            return; // Do not save if already in favorites
-        }
+    const handleSave = () => {
+        if (selectedRecipe) {
+            const isAlreadyFavorite = favorites.some(fav => fav.id === selectedRecipe.id);
+            if (isAlreadyFavorite) {
+                setMessage("Recipe is already in favorites"); // Set the message
+                return; // Do not save if already in favorites
+            }
 
-        // Include mealType when saving the recipe
-        onSave({ ...recipe, mealType }); // Call the onSave function passed from App
-        closeModal(); // Close the modal after saving
-        setMealType(''); // Reset meal type selection
-        setRecipes([]); // Clear the recipes list
+            // Include mealType when saving the recipe
+            onSave({ ...selectedRecipe, mealType }); // Call the onSave function passed from App
+            closeModal(); // Close the modal after saving
+            setMealType(''); // Reset meal type selection
+            setRecipes([]); // Clear the recipes list
+        }
     };
 
     // Close the recipe list
@@ -73,11 +75,12 @@ const RecipeSearch = ({ onSave, favorites = [] }) => { // Default to an empty ar
     };
 
     return (
-        <div>
-            <h2>Search for Recipes</h2>
-            <details ref={dropdownRef} className="dropdown dropdown-right">
-                <summary className="btn m-1">{mealType || 'Select Meal Type'}</summary>
-                <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        <div className="text-neutral-content">
+            <details ref={dropdownRef} className="dropdown mb-4">
+                <summary className="btn btn-primary m-1">
+                    {mealType || 'Select Meal Type'}
+                </summary>
+                <ul className="dropdown-content menu bg-base-100 text-base-content rounded-box z-[1] w-52 p-2 shadow">
                     <li><a onClick={() => handleMealTypeChange('breakfast')}>Breakfast</a></li>
                     <li><a onClick={() => handleMealTypeChange('lunch')}>Lunch</a></li>
                     <li><a onClick={() => handleMealTypeChange('dinner')}>Dinner</a></li>
@@ -85,19 +88,16 @@ const RecipeSearch = ({ onSave, favorites = [] }) => { // Default to an empty ar
             </details>
 
             {loading && <p>Loading...</p>}
-            {message && <p className="error-message">{message}</p>} {/* Display the message */}
+            {message && <p className="error-message text-error">{message}</p>} {/* Display the message */}
 
-            {recipes.length > 0 && (
-                <div className='recipe-results'>
-                    <button onClick={closeRecipeList} className="close-btn">Close</button>
-                    {recipes.map((recipe) => (
-                        <div key={recipe.id} className='recipe-item' onClick={() => handleRecipeClick(recipe)}>
-                            <h3>{recipe.title}</h3>
-                            <p>Ready in {recipe.ready_in_minutes} minutes</p>
-                        </div>
-                    ))}
-                </div>
-            )}
+            <div className='recipe-results grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4'>
+                {recipes.map((recipe) => (
+                    <div key={recipe.id} className='recipe-item bg-base-100 text-base-content p-4 rounded-lg cursor-pointer shadow-md hover:shadow-lg transition-shadow' onClick={() => handleRecipeClick(recipe)}>
+                        <h3 className="font-bold text-lg">{recipe.title}</h3>
+                        <p className="text-sm">Ready in {recipe.ready_in_minutes} minutes</p>
+                    </div>
+                ))}
+            </div>
 
             {/* Modal for displaying recipe details */}
             {selectedRecipe && (
@@ -106,6 +106,7 @@ const RecipeSearch = ({ onSave, favorites = [] }) => { // Default to an empty ar
                     onClose={closeModal}
                     recipe={selectedRecipe}
                     onSave={handleSave}
+                    showSaveButton={true}
                 />
             )}
         </div>

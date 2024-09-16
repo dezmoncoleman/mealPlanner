@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import RecipeSearch from './components/RecipeSearch';
+import HeroSearch from './components/HeroSearch';
 import MealPlanner from './components/MealPlanner';
 
 const App = () => {
@@ -23,10 +23,11 @@ const App = () => {
     };
 
     return (
-        <div>
-            <h1>30 Minutes or Less</h1>
-            <RecipeSearch onSave={handleSaveRecipe} favorites={favorites} /> {/* Pass favorites as a prop */}
-            <MealPlanner favorites={favorites} onDelete={handleDeleteRecipe} /> {/* Pass favorites to MealPlanner and handle delete */}
+        <div className="min-h-screen bg-base-200">
+            <HeroSearch onSave={handleSaveRecipe} favorites={favorites} />
+            <div className="container mx-auto px-4 py-8">
+                <MealPlanner favorites={favorites} onDelete={handleDeleteRecipe} />
+            </div>
         </div>
     );
 };

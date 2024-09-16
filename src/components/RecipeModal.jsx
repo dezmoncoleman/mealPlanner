@@ -28,11 +28,11 @@ const RecipeModal = ({ isOpen, onClose, recipe, onSave, showSaveButton = true })
                         ✕
                     </button>
                 </form>
-                <h3 className="text-lg font-bold">{recipe.title}</h3>
-                <p><strong>Ready in:</strong> {recipe.ready_in_minutes} minutes</p>
-                <p><strong>Description:</strong> {recipe.description || 'No description available.'}</p>
-                <p><strong>Ingredients:</strong> {recipe.ingredients.join(', ')}</p>
-                <p><strong>Directions:</strong> {recipe.directions || 'No directions available.'}</p>
+                <h3 className="text-lg font-bold text-black">{recipe.title}</h3>
+                <p className='text-black'><strong>Ready in:</strong> {recipe.ready_in_minutes} minutes</p>
+                <p className='text-black'><strong>Description:</strong> {recipe.description || 'No description available.'}</p>
+                <p className='text-black'><strong>Ingredients:</strong> {recipe.ingredients.join(', ')}</p>
+                <p className='text-black'><strong>Directions:</strong> {recipe.directions || 'No directions available.'}</p>
                 {showSaveButton && (
                     <button className="btn btn-primary mt-4" onClick={() => onSave(recipe)}>Save to Favorites</button>
                 )}
