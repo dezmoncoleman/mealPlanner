@@ -5,17 +5,14 @@ const cors = require('cors');
 const { Pool } = require('pg');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5432;
 
 app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON bodies
 
 const pool = new Pool({
-    user: 'admin', // replace with your database username
-    host: 'localhost',
-    database: 'meal_planner',
-    password: 'password', // replace with your database password
-    port: 5432,
+    connectionString: process.env.DATABASE_URL,
+    ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false
 });
 
 // Example endpoint to get recipes

@@ -4,10 +4,13 @@ const { Pool } = require('pg');
 // Set up the PostgreSQL connection
 const pool = new Pool({
     user: 'mealplanner_fyzl_user', // Replace with your actual PostgreSQL username
-    host: 'localhost',
-    database: 'mealplanner',
+    host: 'ldpg-crk9j7o8fa8c73978ou0-a.oregon-postgres.render.com',
+    database: 'mealplanner_fyzl',
     password: '523Yon4hByLawzK5B4RhaP5CGmihCuDg', // Replace with your actual PostgreSQL password
     port: 5432,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
 // Read the JSON file
