@@ -9,7 +9,7 @@ const HeroSearch = ({ onSave, favorites }) => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="max-w-md md:max-w-lg lg:max-w-xl">
-          <h1 className="mb-5 text-4xl md:text-5xl font-bold">Recipe Search</h1>
+          <h1 className="mb-5 text-4xl md:text-5xl font-bold">30 Minutes or Less</h1>
           <p className="mb-5 text-sm md:text-base">
             Discover delicious recipes for your next meal. Search by meal type and find the perfect dish to satisfy your cravings. Save to your favorites and view below.
           </p>
