@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import RecipeModal from './RecipeModal';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 const RecipeSearch = ({ onSave, favorites = [] }) => { // Default to an empty array if favorites is undefined
     const [mealType, setMealType] = useState(''); // State for selected meal type
@@ -17,7 +17,8 @@ const RecipeSearch = ({ onSave, favorites = [] }) => { // Default to an empty ar
     const fetchRecipes = async (type) => {
         setLoading(true);
         try {
-            const response = await fetch(`${API_URL}/recipes/meal-type/${type}`);
+            const url = `${API_URL}/api/recipes/meal-type/${type}`;
+            const response = await fetch(url);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
