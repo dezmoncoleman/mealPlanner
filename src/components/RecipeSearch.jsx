@@ -18,10 +18,14 @@ const RecipeSearch = ({ onSave, favorites = [] }) => { // Default to an empty ar
         setLoading(true);
         try {
             const response = await fetch(`${API_URL}/recipes/meal-type/${type}`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
             const data = await response.json();
             setRecipes(data);
         } catch (error) {
             console.error('Error fetching recipes:', error);
+            setMessage('Failed to fetch recipes. Please try again.');
         } finally {
             setLoading(false);
         }
