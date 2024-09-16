@@ -24,7 +24,7 @@ const App = () => {
 
     return (
         <div>
-            <h1>Meal Planner App</h1>
+            <h1>30 Minutes or Less</h1>
             <RecipeSearch onSave={handleSaveRecipe} favorites={favorites} /> {/* Pass favorites as a prop */}
             <MealPlanner favorites={favorites} onDelete={handleDeleteRecipe} /> {/* Pass favorites to MealPlanner and handle delete */}
         </div>
